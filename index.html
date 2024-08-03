@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+            rel="icon"
+            href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💖</text></svg>"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+    <!--BS ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--FLATICONS-->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-brands/css/uicons-brands.css'>
+    <!--GLIGHTBOX-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"/>
+    <title>Ria's Commissions</title>
+</head>
+<body>
+<!--TODO: add lightbox-->
+<div class="container" id="content">
+    <!--NAVBAR-->
+    <nav class="navbar">
+        <div class="container-fluid justify-content-center">
+            <span class="navbar-brand mb-0 h1 lato-black ">RIA'S COMMISSIONS</span>
+        </div>
+        <img class="z-3 position-absolute top-0 start-0 deco d-none d-sm-block"
+             src="deco_left.png" alt="Huwahuwa Pink Line Emoji">
+        <img class="z-3 position-absolute end-0 deco d-none d-sm-block"
+             src="deco_right.png" alt="Huwahuwa Pink Line Emoji">
+    </nav>
+
+    <!--INFO-->
+    <div class="d-flex flex-column flex-md-row align-items-center my-3 border rounded" id="info">
+        <div class="flex-shrink-0">
+            <img src="profile.png" class="img-fluid" alt="...">
+        </div>
+        <div class="flex-grow-1">
+            <div class="list-group list-group-flush">
+                <a href="https://twitter.com/_geummi" target="_blank"
+                   class="list-group-item list-group-item-action nunito-sans-condensed"><i
+                        class="bi bi-twitter"></i>TWITTER</a>
+                <a href="https://www.tumblr.com/blog/geummi" target="_blank"
+                   class="list-group-item list-group-item-action"><i class="fi fi-brands-tumblr"></i>TUMBLR</a>
+                <a href="https://docs.google.com/spreadsheets/d/1rrLChVbFZfQdj4PUsWOWZMCHaVWve13IRjE-dXZoiho/edit?usp=sharing"
+                   target="_blank" class="list-group-item list-group-item-action"><i
+                        class="bi bi-pencil-square"></i>COMMISSION TRACKER</a>
+                <button type="button" class="list-group-item list-group-item-action" data-bs-toggle="modal"
+                        data-bs-target="#tosModal"><i class="bi bi-star-fill"></i>TERMS OF SERVICE
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--MODAL-->
+    <div class="modal fade" id="tosModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+         aria-labelledby="termsOfService" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title fs-4" id="termsOfService"><span class="arrow">➽───❥ </span>TERMS OF SERVICE
+                    </h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ol>
+                        <li>I may decline, cancel, or refund any commission.</li>
+                        <li>I can post the final commission with my watermark, unless requested not to.</li>
+                        <li>Please inform me of any deadlines you might have — rush commissions may cost extra.</li>
+                        <li>There are no refunds after the final work has been sent.</li>
+                        <li>Any refunds or cancellations during the commission process will be deducted based on what
+                            I've already completed.
+                        </li>
+                        <li>The commissioner may request major changes during the sketch phase only. Minor revisions
+                            will be considered at any other stage.
+                        </li>
+                        <li>The commissioner can do anything with the commissioned art except profit whether directly or
+                            indirectly, resell, deform, or claim it as their own work.
+                        </li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p>Personal commissions only. DM me on <a class="text-decoration-none"><i
+            class="bi bi-twitter"></i> Twitter</a> if you're interested or have any questions!</p>
+    <ul>
+        <li>Please have references available.</li>
+        <li>All prices listed below are <strong>base prices</strong> and are
+            therefore subject to change.
+        </li>
+        <li>Payment is in USD via PayPal.</li>
+        <li>You will receive a full resolution copy of your commission once I confirm payment.</li>
+    </ul>
+    <p>By commissioning me, you agree to my Terms of Service.</p>
+
+    <!--ALERT-->
+    <div class="alert alert-primary d-flex align-items-center mx-auto mt-4" role="alert">
+        <div class="flex-shrink-0">
+            <img
+                    src="snoopy.png"
+                    alt="Chubby Snoopy Emoji from Line">
+        </div>
+        <div class="flex-grow-1 ms-4">
+            <h5 class="fw-bold text-center alert-text">STATUS:
+                <span class="wavy d-inline">
+                    <span style="--i:1">W</span><span style="--i:2">A</span><span style="--i:3">I</span><span
+                        style="--i:4">T</span><span style="--i:5">L</span><span style="--i:6">I</span><span
+                        style="--i:7">S</span><span style="--i:8">T</span><span style="--i:9">.</span><span
+                        style="--i:10">.</span><span style="--i:11">.</span>
+                </span>
+            </h5>
+            <p class="mt-3">You will be put on my waitlist while I complete my current commissions. You can check the
+                waitlist on
+                <a href="https://docs.google.com/spreadsheets/d/1rrLChVbFZfQdj4PUsWOWZMCHaVWve13IRjE-dXZoiho/edit?usp=sharing"
+                   target="_blank">MY COMMISSION TRACKER!</a></p>
+        </div>
+    </div>
+
+    <hr class="rainbow">
+    <h3><span class="arrow">➽───❥ </span>FULL ILLUST</h3>
+    <div class="d-flex flex-column flex-md-row">
+        <img class="flex-grow-1 rounded img-fluid" src="illust_01.jpg" id="illust-left"
+             alt="Full illustration sample #1. Two small figures play a board game under the shade of a large tree." onclick="lightbox.open()">
+        <img class="flex-shrink-1 rounded img-fluid" src="illust_02.jpg" id="illust-right" onclick="lightbox.openAt(1)"
+             alt="Full illustration sample #2. Two girls smile at the camera. They are in a garden with wisterias hanging from above.">
+    </div>
+    <p>Details: Please DM me in order to receive a price quote!</p>
+
+    <hr class="rainbow">
+    <h3><span class="arrow">➽───❥ </span>SIMPLE CHEEB</h3>
+    <picture>
+        <img class="img-fluid rounded d-block d-md-none" src="cheeb_square.jpg" alt="Simple Cheeb sample." onclick="lightbox.openAt(2)">
+        <img class="img-fluid rounded d-none d-md-block" src="cheeb_horizontal.jpg" alt="Simple Cheeb sample." onclick="lightbox.openAt(2)">
+    </picture>
+    <p>Details: <strong>$20</strong> per character. Lined, flat color, no background. Simple props are OK!
+    </p>
+
+    <hr class="rainbow">
+    <h3><span class="arrow">➽───❥ </span>COLORED SKETCH</h3>
+    <img class="img-fluid rounded" src="sketch_01.png"
+         alt="Colored sketch example. Two fullbodies characters with some rainbow stars sprinkled in the background." onclick="lightbox.openAt(3)">
+    <p>Details: <strong>$50</strong> per character. Cleaned sketch, flat color, minimal shading, no
+        background. Simple props are OK!</p>
+
+    <footer class="text-body-tertiary text-center pt-5">&copy; Website by <a
+            class="text-decoration-none text-reset" href="https://twitter.com/_geummi"
+            target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter"
+             viewBox="0 0 16 16">
+            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+        </svg>
+        @_geummi</a></footer>
+
+</div>
+<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+<script type="text/javascript">
+    const lightbox = GLightbox({
+        touchNavigation: true,
+        loop: true,
+        openEffect: 'fade',
+        closeEffect: 'fade',
+        zoomable: true,
+        draggable: true,
+        elements: [
+            {
+                'href': 'illust_01.jpg',
+                'type': 'image',
+            },
+            {
+                'href': 'illust_02.jpg',
+                'type': 'image',
+            },
+            {
+                'href': 'cheeb_square.jpg',
+                'type': 'image',
+            },
+            {
+                'href': 'sketch_01.png',
+                'type': 'image',
+            },
+        ],
+    });
+</script>
+</body>
+</html>

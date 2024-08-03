@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Lato:wght@900&family=Nunito+Sans:ital,opsz,wdth,wght@0,6..12,75..125,200..1000;1,6..12,75..125,200..1000&display=swap');
+
+/*TODO: spacing, fonts*/
+/*TODO: DECO SIZING*/
+
+/* coloring ARROWS*/
+
+.arrow {
+    color: #e0bd70;
+}
+
+/* FONTS */
+
+
+.lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    color: #a54855 !important;
+    font-style: normal;
+    font-size: 2rem !important;
+    word-spacing: .75rem !important;
+}
+
+.dm-serif-text-regular, h3 {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #6B5F57 !important;
+}
+
+.dm-serif-text-regular-italic {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 1000
+// <width>: Use a value from 75 to 125 */
+
+.nunito-sans-regular, p, li, footer, a.text-decoration-none, h5 {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    font-variation-settings: "wdth" 100,
+    "YTLC" 500;
+}
+
+.list-group-item {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300 !Important;
+    font-style: normal;
+    font-size: 1rem;
+    font-stretch: 75%;
+}
+
+/* setting alert text color */
+.alert-text {
+    color: #052c65 !important;
+}
+
+nav span {
+    color: #a54855 !important;
+    margin-left: 1rem;
+}
+
+/* list-group-items icon styling */
+.list-group-item > i.bi-twitter {
+    color: #28aae1;
+}
+
+.list-group-item > i.fi-brands-tumblr {
+    color: #272d3d;
+}
+
+.list-group-item > i.bi-pencil-square {
+    color: seagreen;
+}
+
+.list-group-item > i.bi-star-fill {
+    color: goldenrod;
+}
+
+.list-group-item > i {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+/*list-group-items bigger font size*/
+
+.list-group-item {
+    font-size: 1.25rem;
+}
+
+/* BG STYLING */
+
+body {
+    background-color: #f7d6dd;
+    opacity: 1;
+    background-image: radial-gradient(#ffffff 1.4500000000000002px, #f7d6dd 1.4500000000000002px);
+    background-size: 29px 29px;
+}
+
+/*spacing all art samples*/
+
+img.rounded {
+    margin: 2rem 0;
+}
+
+img.rounded:hover {
+    box-shadow: ;
+}
+
+
+/*screens MD and above*/
+@media (min-width: 768px) {
+    #content {
+        width: 75vw;
+    }
+
+    /*ILLUST PICTURES*/
+    #illust-left {
+        width: 70%;
+        margin-right: 10px;
+    }
+
+    #illust-right {
+        width: 30%;
+    }
+
+    /*FLEXBOX INFO*/
+    #info .flex-shrink-0 {
+        width: 30%;
+    }
+
+    #info .flex-grow-1 .list-group-item {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    nav span {
+    }
+
+}
+
+/*screens MD and below*/
+@media (max-width: 768px) {
+    #illust-left {
+        margin-bottom: .25rem;
+    }
+
+    #illust-right {
+        margin-top: .25rem;
+    }
+
+    #info .flex-grow-1 {
+        width: 100%;
+    }
+
+    .deco {
+        height: 4rem;
+    }
+
+}
+
+/*screens LG and above*/
+@media (min-width: 992px) {
+    .alert {
+        width: 70%;
+    }
+}
+
+/*INFO hover*/
+.list-group-item-action:hover {
+    padding-left: 2rem;
+    transition: padding-left 0.6s, background-color 0.3s ease-in;
+}
+
+
+/*TOS modal*/
+.modal-body > ol > li {
+    margin-bottom: 0.75rem;
+    padding-left: 1rem;
+}
+
+.modal-body > ol {
+    margin-top: 0.75rem;
+}
+
+/*changing icon link transform*/
+
+.icon-link-hover {
+    --bs-icon-link-transform: translate3d(0, -.125rem, 0) !important;
+}
+
+/*CONTENT*/
+
+#content {
+    min-height: 100vh;
+    background: white;
+    margin: 3rem auto;
+    border-radius: 25px;
+    padding: 1.5rem;
+}
+
+/*NAV BG*/
+
+nav {
+    background: linear-gradient(to right, pink, lightgoldenrodyellow, #cfe2ff);
+}
+
+img {
+    height: 100px;
+}
+
+
+/*creating rainbow hr*/
+hr {
+    margin: 2rem 0 !important;
+    border: none !important;
+    height: 8px;
+}
+
+hr.rainbow {
+    background: linear-gradient(to right, red, orange, yellow, green, blue, purple);
+}
+
+/*animating wavy text*/
+.wavy span {
+    display: inline-block;
+    animation: animate 2s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0px);
+    }
+
+    20% {
+        transform: translateY(-10px);
+    }
+
+    40%,
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* animating shaking deco*/
+
+@keyframes shake {
+    0% {
+        transform: rotate(-20deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-20deg);
+    }
+}
+
+.deco {
+    animation: shake 4s ease-in-out infinite;
+}

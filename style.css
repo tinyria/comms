@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Lato:wght@900&family=Nunito+Sans:ital,opsz,wdth,wght@0,6..12,75..125,200..1000;1,6..12,75..125,200..1000&display=swap');
 
-/*TODO: spacing, fonts*/
-/*TODO: DECO SIZING*/
 
 /* coloring ARROWS*/
 
@@ -110,11 +108,6 @@ img.rounded {
     margin: 2rem 0;
 }
 
-img.rounded:hover {
-    box-shadow: ;
-}
-
-
 /*screens MD and above*/
 @media (min-width: 768px) {
     #content {
@@ -164,13 +157,6 @@ img.rounded:hover {
         height: 4rem;
     }
 
-}
-
-/*screens LG and above*/
-@media (min-width: 992px) {
-    .alert {
-        width: 70%;
-    }
 }
 
 /*INFO hover*/

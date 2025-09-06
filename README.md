@@ -1,6 +1,4 @@
-😿 i discovered that using chatGPT is not helping save the planet so im proud to say i only had to open it once and it was to ask why one of my css animations wasn't working 🥳
-
-# resources
+# Resources
 - bootstrap 5 🔗 https://getbootstrap.com/docs/5.3/getting-started/introduction/
 - flaticons 🔗 https://www.flaticon.com/
 - glightbox 🔗 https://github.com/biati-digital/glightbox#glightbox
